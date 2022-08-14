@@ -25,7 +25,18 @@ Exemplo (nano oi.txt)<br>
 
 ## 3- PWD: mostra o caminho que você está no terminal<br> 
 
-## 4- cat: mostra os arquivos que esta dentro do diretorio<br> 
+## 4- cat: pega as informaçoes de um determinado arquivos e exibi na tela<br>
+exemplo cat etc/services
+
 
 ## 5- rm: é usado para Apagar
 1.1 rm -rf: apaga tudo, diretorio e arquivos
+
+## 6- tac: ele é igual a cat mais so que exibe ao contrario de traz para frente
+
+## 7-cp: é para copiar arquivos e mover arquivos
+exemplo cp Aulalinux.txt Faculdade
+aula linux é o arquivo que eu estou copiando. Faculadade é o diretorio que eu estou movendo a copia.
+
+## 8- mv: Caso precise mover use mv + nome do arquivo + novo diretorio
+mv AulaLinux.txt Faculdade
