@@ -39,4 +39,25 @@ exemplo cp Aulalinux.txt Faculdade
 aula linux é o arquivo que eu estou copiando. Faculadade é o diretorio que eu estou movendo a copia.
 
 ## 8- mv: Caso precise mover use mv + nome do arquivo + novo diretorio
-mv AulaLinux.txt Faculdade
+mv AulaLinux.txt Faculdade 
+
+## 9- Usuarios:
+1.1- useradd convidado -m -c "Benedito"
+no codigo acima você esta passando o nome de usario, depois, o padrão -m para ser criado as pastas padrões, logo após vem o -c criar uma nova pasta para o novo usuario.
+
+1.2-  userdel -f convidado
+O codigo apresentado é usado para apagar o usario.
+
+1.3- useradd convidado -m -c "Benedito" -e 18/08/2022
+Temos um novo parametro o -e + data do termino, é usado para dar uma data de uso para o novo usario, ele pode usar até aquela determinada data depois a sua conta é expirada.
+
+1.4- usermod convidado 
+Com esse novo comando você pode realizar alterações, apenas passe o paramentro quw você deseja alterar.
+
+1.5- usermod convidado -s /bin/bash
+O parametro -s /bin/bash é utilizado para add o shell a pasta, o shell é que faz as configurações finais
+
+1.6- passwd convidado -e 
+O comando acima esta requerendo que o novo usario ao entra na conta, crie uma nova senha.
+Caso deseje da uma data para a troca de senha, apenas coloque a data limite na frente do paramentro => passwd convidado -e 18/08/2022.
+
