@@ -61,3 +61,8 @@ O parametro -s /bin/bash é utilizado para add o shell a pasta, o shell é que f
 O comando acima esta requerendo que o novo usario ao entra na conta, crie uma nova senha.
 Caso deseje da uma data para a troca de senha, apenas coloque a data limite na frente do paramentro => passwd convidado -e 18/08/2022.
 
+## 10- -G: <br>
+é uma parametro que move um usario padrão para uma determinado grupo dando as permissoes que aquele grupo tem.<br>
+=> usermod -G adm,sudo convidado
+usermod + o parametro -G + os grupos "adm,sudo" + O usuario
+
