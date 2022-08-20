@@ -81,4 +81,31 @@ Caso deseje da uma data para a troca de senha, apenas coloque a data limite na f
 ## 10- -G: <br>
 é uma parametro que move um usario padrão para uma determinado grupo dando as permissoes que aquele grupo tem.<br>
 => usermod -G adm,sudo convidado
-usermod + o parametro -G + os grupos "adm,sudo" + O usuario
+usermod + o parametro -G + os grupos "adm,sudo" + O usuario<br>
+
+## 11- Grupos e permissões:
+1.1 (chomd 750 /adm/) O codigo apresentado desta mudando as permissões do diretorio adm, o número 750 é uma soma, o primerio valor é para o responsalvel pelo o repositrio, o segundo valor é para usuarios que estão no grupo desse diretorio e o terceiro é para usuarios que não esão no grupo do diretorio.
+
+1.2 - (chown root:GRP_ADM texto-adm.txt) O codigo é para transferir o para o root ser o dono do diretorio 
+
+                     Tabela para a soma:
+![image](https://user-images.githubusercontent.com/99850729/185762075-671690be-f54c-4d2f-84de-46fc3e6be7d7.png)
+
+
+
+
+13- Scripts
+
+1- Como criar scripts?
+Para criar um script você deve adicionar a extensão .sh no fianl do nome do arquivo que voce esta criando.<br>
+Exemplo script.sh
+
+2- Como rodar o um script?<br> 
+È muito facil para rodar um script voçê deve utilzar o seguinte comando ./+ o nome do arquivo.<br>
+Exemplo ./script.sh
+
+3- Caso o de erro deve ser porque o usuario que você logado não tem permissão para rodar ele. Caso isso aconteça utilize o seguiente codigo (chmod +x script.sh) ou (chmod 744 script.sh)so lembrando para realizar modificações você deve estar de usuario root
+
+4- Caso queira retirar a permissão do diretorio ser rodado utlize o seguiente codigo (chmod -x script.sh) ou (chmod 644 script.sh)
+
+
