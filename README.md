@@ -94,18 +94,32 @@ usermod + o parametro -G + os grupos "adm,sudo" + O usuario<br>
 
 
 
-13- Scripts
+## 13- Scripts
 
-1- Como criar scripts?
-Para criar um script você deve adicionar a extensão .sh no fianl do nome do arquivo que voce esta criando.<br>
+### 1- Como criar scripts?<br>
+####Para criar um script você deve adicionar a extensão .sh no fianl do nome do arquivo que voce esta criando.<br>
 Exemplo script.sh
 
-2- Como rodar o um script?<br> 
-È muito facil para rodar um script voçê deve utilzar o seguinte comando ./+ o nome do arquivo.<br>
+### 2- Como rodar o um script?<br> 
+####È muito facil para rodar um script voçê deve utilzar o seguinte comando ./+ o nome do arquivo.<br>
 Exemplo ./script.sh
 
 3- Caso o de erro deve ser porque o usuario que você logado não tem permissão para rodar ele. Caso isso aconteça utilize o seguiente codigo (chmod +x script.sh) ou (chmod 744 script.sh)so lembrando para realizar modificações você deve estar de usuario root
 
-4- Caso queira retirar a permissão do diretorio ser rodado utlize o seguiente codigo (chmod -x script.sh) ou (chmod 644 script.sh)
+## 4- Caso queira retirar a permissão do diretorio ser rodado utlize o seguiente codigo (chmod -x script.sh) ou (chmod 644 script.sh)
+
+## 14- Abaixar pacotes no Linux:<br>
+
+1- apt-get: é usado para abaixar programas e pacotes mas não é tão amigavel com o usuario é um codigo mais de baixo nivel "Linguaguem de maquina"
+
+apt list: Apresenta todo os pacotes disponivies que voce pode instalar
+apt list --unstalled: todos os pacotes instalados na sua maquina
+apt list --upgradeable: mostra as atualizações que pode ser atualizado
+apt search samba: o search é usado para buscar algum pacote para realizar o instal dele
+apt install net-tools: Para realizar a instalação use o install + o nome do pacote
+
+16- Para copiar um arquivo:
+wget https://github.com/emanuelsantossouza/Terminal-Linux/archive/refs/heads/main.zip
+
 
 
