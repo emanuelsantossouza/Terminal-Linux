@@ -122,4 +122,23 @@ apt install net-tools: Para realizar a instalação use o install + o nome do pa
 wget https://github.com/emanuelsantossouza/Terminal-Linux/archive/refs/heads/main.zip
 
 
+17- Disco:<br>
+lsblk demostra os disco e as repartições da maquina
+fdisk -l igual o comando anterior mas com mais informações
+
+
+
+root@linuxserver:/# mkdir /disk2
+root@linuxserver:/# mount /dev/sdb /disk2/
+root@linuxserver:/# cd disk2/
+root@linuxserver:/disk2# ls
+lost+found
+root@linuxserver:/disk2# touch arquivo.txt
+root@linuxserver:/disk2# touch arquivo2.txt
+root@linuxserver:/disk2#
+
+
+
+
+
 
