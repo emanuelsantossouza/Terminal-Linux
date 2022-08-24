@@ -54,6 +54,8 @@
 ## 7-cp: é para copiar arquivos e mover arquivos
 exemplo cp Aulalinux.txt Faculdade
 aula linux é o arquivo que eu estou copiando. Faculadade é o diretorio que eu estou movendo a copia.
+cp /etc/s* /disk2/backup/ -r -v
+
 
 ## 8- mv: Caso precise mover use mv + nome do arquivo + novo diretorio
 mv AulaLinux.txt Faculdade 
