@@ -59,6 +59,10 @@ cp /etc/s* /disk2/backup/ -r -v
 
 ## 8- mv: Caso precise mover use mv + nome do arquivo + novo diretorio
 mv AulaLinux.txt Faculdade 
+exemplo
+mv /home/emanuellinux/* /disk2/ -i -v
+mv arquivo1.txt Arquivo.txt
+
 
 ## 9- Usuarios:
 1.1- useradd convidado -m -c "Benedito"
@@ -87,6 +91,10 @@ usermod + o parametro -G + os grupos "adm,sudo" + O usuario<br>
 
 ## 11- Grupos e permissões:
 1.1 (chomd 750 /adm/) O codigo apresentado desta mudando as permissões do diretorio adm, o número 750 é uma soma, o primerio valor é para o responsalvel pelo o repositrio, o segundo valor é para usuarios que estão no grupo desse diretorio e o terceiro é para usuarios que não esão no grupo do diretorio.
+
+Para criar um novo grupo voce utiliza 
+"groupadd GRP_VEN"
+groupadd + nome do grupo
 
 1.2 - (chown root:GRP_ADM texto-adm.txt) O codigo é para transferir o para o root ser o dono do diretorio 
 
@@ -128,8 +136,13 @@ wget https://github.com/emanuelsantossouza/Terminal-Linux/archive/refs/heads/mai
 lsblk demostra os disco e as repartições da maquina
 fdisk -l igual o comando anterior mas com mais informações
 
+18- Como derrubar um usuario:<br>
+  Mostra que esta online e o que esta fazendo, use o "ps"
+  Mostra o que ele esta fazendo "w"
+  Mostra o ip e assim é possivel derrubar o usuario "who -a"
+  Deruba o usario apenas com o ip "kill 1667"
 
-
+19- Montando um disk 
 root@linuxserver:/# mkdir /disk2
 root@linuxserver:/# mount /dev/sdb /disk2/
 root@linuxserver:/# cd disk2/
@@ -138,6 +151,7 @@ lost+found
 root@linuxserver:/disk2# touch arquivo.txt
 root@linuxserver:/disk2# touch arquivo2.txt
 root@linuxserver:/disk2#
+
 
 
 
